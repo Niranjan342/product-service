@@ -2,7 +2,7 @@ package com.app;
 
 public class Model {
 
-	private int modelId;
+	private int id;
 	private String modelName;
 	private String modelVersion;
 
@@ -13,15 +13,19 @@ public class Model {
 	/**
 	 * @return the modelId
 	 */
-	public int getModelId() {
-		return modelId;
+
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
 	}
 
 	/**
-	 * @param modelId the modelId to set
+	 * @param id the id to set
 	 */
-	public void setModelId(int modelId) {
-		this.modelId = modelId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	/**
@@ -54,7 +58,7 @@ public class Model {
 
 	@Override
 	public String toString() {
-		return "Model [modelId=" + modelId + ", modelName=" + modelName + ", modelVersion=" + modelVersion + "]";
+		return "Model [modelId=" + id + ", modelName=" + modelName + ", modelVersion=" + modelVersion + "]";
 	}
 
 }
